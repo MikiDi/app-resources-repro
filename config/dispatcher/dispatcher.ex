@@ -12,9 +12,9 @@ defmodule Dispatcher do
   # In order to forward the 'themes' resource to the
   # resource service, use the following forward rule:
   #
-  # match "/themes/*path", @json do
-  #   Proxy.forward conn, path, "http://resource/themes/"
-  # end
+  match "/jobs/*path", @json do
+    Proxy.forward conn, path, "http://resource/jobs/"
+  end
   #
   # Run `docker-compose restart dispatcher` after updating
   # this file.
