@@ -5,7 +5,8 @@
 (defparameter *include-count-in-paginated-responses* t)
 (defparameter *max-group-sorted-properties* t)
 (setf *cache-model-properties-p* t)
-
+(setf *log-delta-clear-keys* t)
+ 
 ;; reading in the domain.json
 ; (read-domain-file "domain.json")
 

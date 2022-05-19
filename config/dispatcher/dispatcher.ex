@@ -13,7 +13,7 @@ defmodule Dispatcher do
   # resource service, use the following forward rule:
   #
   match "/jobs/*path", @json do
-    Proxy.forward conn, path, "http://resource/jobs/"
+    Proxy.forward conn, path, "http://cache/jobs/"
   end
   #
   # Run `docker-compose restart dispatcher` after updating
